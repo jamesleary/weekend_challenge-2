@@ -1,0 +1,17 @@
+.container {
+
+  justify-content: center;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  margin:5px;
+}
+.inputfield {
+  background-color: lightgray;
+  height: 50px;
+  width: 245px;
+  overflow: hidden;
+  text-align: right;
+}

@@ -4,23 +4,53 @@
   <meta charset="utf-8">
   <title>Weekend Challenge 2</title>
   <script type="text/javascript" src="vendors/jquery.js"></script>
-  <script type="text/javascript" src="scripts/client.js"></script>
-
+  <!--<script type="text/javascript" src="scripts/client.js"></script>-->
+  <script type="text/javascript" src="scripts/client2.js"></script>
+  <link rel="stylesheet" href="views/main.css">
 </head>
 <body>
   <h1>Calculator</h1>
-  <div class="input-fields">
-    <input type="number"id="variable1"><span id="placeholder"></span>
-    <input type="number" id="variable2"><span id="answer"></span>
+  <!-- Base mode index.html -->
+  <!-- <div class="input-fields">
+  <input type="number"id="variable1"><span id="placeholder"></span>
+  <input type="number" id="variable2"><span id="answer"></span>
+</div>
+<div class="operators">
+<button type="button" id="add">+</button>
+<button type="button" id="subtract">-</button>
+<button type="button" id="divide">/</button>
+<button type="button" id="multiply">*</button>
+</div>
+<div class="answer">
+<button type="button" id="calculate">Calculate</button>
+</div -->
+<div class="container">
+  <p class="inputfield"></p>
+  <div class="first row">
+    <button type="button" class='number'id="7">7</button>
+    <button type="button" class='number'id="8">8</button>
+    <button type="button" class='number'id="9">9</button>
+    <button type="button" class='operator'id="divide">/</button>
   </div>
-  <div class="operators">
-    <button type="button" id="add">+</button>
-    <button type="button" id="subtract">-</button>
-    <button type="button" id="divide">/</button>
-    <button type="button" id="multiply">*</button>
+  <div class="second row">
+    <button type="button" class='number'id="4">4</button>
+    <button type="button" class='number'id="5">5</button>
+    <button type="button" class='number'id="6">6</button>
+    <button type="button" class='operator'id="multiply">*</button>
   </div>
-  <div class="answer">
-    <button type="button" id="calculate">Calculate</button>
-    </div
-  </body>
-  </html>
+  <div class="third row">
+    <button type="button" class='number'id="1">1</button>
+    <button type="button" class='number'id="2">2</button>
+    <button type="button" class='number'id="3">3</button>
+    <button type="button" class='operator'id="subtract">-</button>
+  </div>
+  <div class="fourth row">
+    <button type="button" class='number'id="0">0</button>
+    <button type="button" class='clear'id="clear">Clear</button>
+    <button type="button" id="calculate">=</button>
+    <button type="button" class='operator'id="add">+</button>
+  </div>
+</div>
+
+</body>
+</html>
