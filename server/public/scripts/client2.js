@@ -41,10 +41,11 @@ function dataSend(){$('#calculate').on('click',function(){
     },
     success: function(response){
       console.log('success POST');
-      dataReceive();
+      $('.inputfield').text('calculating...');
+      setTimeout(function(){dataReceive();} , 3000);
     }
   });
-});//end of calculate
+});//end of calculate setTimeout(function(){ alert("Hello"); }, 3000);
 }
 //send back the answer with the given data
 function dataReceive(){
