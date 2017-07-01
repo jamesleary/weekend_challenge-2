@@ -41,7 +41,7 @@ function clickHandlers (){
     dataSend();
   });
 }//end of clickHandlers
-
+//send input to the server to be calculated
 function dataSend (){
   $.ajax({
     type:"POST",
@@ -64,7 +64,9 @@ function dataReceive(){
     url:"/calculate",
     success: function(response){
       console.log(response);
-      
+      parseInt(response);
+      $('#answer').append(response);
+
     }
   });
 }

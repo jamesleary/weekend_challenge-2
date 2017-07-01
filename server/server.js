@@ -17,19 +17,15 @@ app.post('/calculate', function(req, res){
   input2 = calculation.input2;
   operator = calculation.operator;
   logic();
-console.log(answer);
+  console.log(answer);
   res.send({messege:'Successfully added our project!'});
 });
 
- app.get('/calculation', function (){
-   console.log('sending calc');
-   answer = answer.toString();
-   res.send(answer);
- });
-
-
-
-
+app.get('/calculate', function (req, res){
+  console.log('sending calc');
+  answer = answer.toString();
+  res.send(answer);
+});
 app.get('/*', function (req,res){
   var file = req.params[0] || 'views/index.html';
   res.sendFile(path.join(__dirname,'/public', file));
@@ -51,5 +47,5 @@ function logic(){
   }
   else if (operator == 'divide') {
     answer = parseInt(input1) / parseInt(input2);
-}
+  }
 }
