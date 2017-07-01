@@ -3,6 +3,7 @@ var input1;
 var input2;
 var operator;
 $(document).ready(function(){
+$('.inputfield').text(0);
   numberClick();
   operatorSelect();
   dataSend();
@@ -63,6 +64,7 @@ function dataReceive(){
 function clearAll(){
   $('.clear').on('click', function(){
     $('.inputfield').empty();
+    $('.inputfield').text(0);
     input1 = 0;
     input2 = 0;
     operator = 0;
