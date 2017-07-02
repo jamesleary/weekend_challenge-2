@@ -1,6 +1,10 @@
 .container {
 
   justify-content: center;
+  padding-left: 375px;
+}
+h1{
+  text-align: center;
 }
 
 button {
